@@ -38,6 +38,17 @@ new_array
 end
 
 def total_gross(source)
+  director_earning_hash = directors_totals(source)
+  director_names = list_of_directors(source)
+  i = 0
+  total = 0
+
+  while i < director_names.length do
+    dir_name = director_names[i]
+    total += director_earning_hash[dir_name]
+    i += 1
+end
+total
   # Write this implementation
   #
   # Should use methods:
