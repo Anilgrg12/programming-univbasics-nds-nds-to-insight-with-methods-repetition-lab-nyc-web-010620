@@ -25,6 +25,15 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
+  new_array = []
+  i = 0
+
+  while i < source.length do
+    mov_dir = source[i][:name]
+    new_array << mov_dir
+    i += 1
+end
+new_array
   # Write this implementation
 end
 
